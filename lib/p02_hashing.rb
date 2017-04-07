@@ -7,7 +7,7 @@ class Array
     result = 0
 
     each_with_index do |el, idx|
-      result = result ^ (el + idx)
+      result = result ^ (el.hash + idx)
     end
 
     result
